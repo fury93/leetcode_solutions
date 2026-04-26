@@ -10,3 +10,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+mapping.json
+*.py
+missing_solutions.txt
