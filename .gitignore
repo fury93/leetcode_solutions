@@ -11,6 +11,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-mapping.json
+*.json
 *.py
-missing_solutions.txt
+*.txt
