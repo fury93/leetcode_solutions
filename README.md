@@ -1,9 +1,6 @@
 # LeetCode Solutions
 
-Total Premium Solved: **643**
-
 ## 💎 Premium Problems
-*Solved LeetCode Premium questions indexed automatically.*
 
 * [0156. Binary Tree Upside Down](./0101-0200/0156-binary-tree-upside-down) — `🟡 Medium`
 * [0157. Read N Characters Given Read4](./0101-0200/0157-read-n-characters-given-read4) — `🟢 Easy`
@@ -635,16 +632,16 @@ Total Premium Solved: **643**
 * [3293. Calculate Product Final Price](./3201-3300/3293-calculate-product-final-price) — `🟡 Medium`
 * [3294. Convert Doubly Linked List to Array II](./3201-3300/3294-convert-doubly-linked-list-to-array-ii) — `🟡 Medium`
 * [3299. Sum of Consecutive Subsequences](./3201-3300/3299-sum-of-consecutive-subsequences) — `🔴 Hard`
-* [3308. Find Top Performing Driver](./3301-3400/3308-find-top-performing-driver) — `Unknown`
-* [3313. Find the Last Marked Nodes in Tree](./3301-3400/3313-find-the-last-marked-nodes-in-tree) — `Unknown`
-* [3322. Premier League Table Ranking III](./3301-3400/3322-premier-league-table-ranking-iii) — `Unknown`
-* [3323. Minimize Connected Groups by Inserting Interval](./3301-3400/3323-minimize-connected-groups-by-inserting-interval) — `Unknown`
-* [3328. Find Cities in Each State II](./3301-3400/3328-find-cities-in-each-state-ii) — `Unknown`
-* [3329. Count Substrings With K-Frequency Characters II](./3301-3400/3329-count-substrings-with-k-frequency-characters-ii) — `Unknown`
-* [3338. Second Highest Salary II](./3301-3400/3338-second-highest-salary-ii) — `Unknown`
-* [3339. Find the Number of K-Even Arrays](./3301-3400/3339-find-the-number-of-k-even-arrays) — `Unknown`
-* [3344. Maximum Sized Array](./3301-3400/3344-maximum-sized-array) — `Unknown`
-* [3353. Minimum Total Operations](./3301-3400/3353-minimum-total-operations) — `Unknown`
-* [3358. Books with NULL Ratings](./3301-3400/3358-books-with-null-ratings) — `Unknown`
-* [3359. Find Sorted Submatrices With Maximum Element at Most K](./3301-3400/3359-find-sorted-submatrices-with-maximum-element-at-most-k) — `Unknown`
-* [3368. First Letter Capitalization](./3301-3400/3368-first-letter-capitalization) — `Unknown`
+* [3308. Find Top Performing Driver](./3301-3400/3308-find-top-performing-driver) — `🟡 Medium`
+* [3313. Find the Last Marked Nodes in Tree](./3301-3400/3313-find-the-last-marked-nodes-in-tree) — `🔴 Hard`
+* [3322. Premier League Table Ranking III](./3301-3400/3322-premier-league-table-ranking-iii) — `🟡 Medium`
+* [3323. Minimize Connected Groups by Inserting Interval](./3301-3400/3323-minimize-connected-groups-by-inserting-interval) — `🟡 Medium`
+* [3328. Find Cities in Each State II](./3301-3400/3328-find-cities-in-each-state-ii) — `🟡 Medium`
+* [3329. Count Substrings With K-Frequency Characters II](./3301-3400/3329-count-substrings-with-k-frequency-characters-ii) — `🔴 Hard`
+* [3338. Second Highest Salary II](./3301-3400/3338-second-highest-salary-ii) — `🟡 Medium`
+* [3339. Find the Number of K-Even Arrays](./3301-3400/3339-find-the-number-of-k-even-arrays) — `🟡 Medium`
+* [3344. Maximum Sized Array](./3301-3400/3344-maximum-sized-array) — `🟡 Medium`
+* [3353. Minimum Total Operations](./3301-3400/3353-minimum-total-operations) — `🟢 Easy`
+* [3358. Books with NULL Ratings](./3301-3400/3358-books-with-null-ratings) — `🟢 Easy`
+* [3359. Find Sorted Submatrices With Maximum Element at Most K](./3301-3400/3359-find-sorted-submatrices-with-maximum-element-at-most-k) — `🔴 Hard`
+* [3368. First Letter Capitalization](./3301-3400/3368-first-letter-capitalization) — `🔴 Hard`
