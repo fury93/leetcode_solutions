@@ -1,9 +1,9 @@
 class Solution:
     def addToArrayForm(self, num: List[int], k: int) -> List[int]:
-        for i in reversed(range(len(num))):
-            k, num[i] = divmod(num[i] + k, 10)
+        for i in range(len(num)):
+            k, num[~i] = divmod(num[~i] + k, 10)
         
-        return [int(i) for i in str(k)] + num if k else num
+        return list(map(int, str(k))) + num if k else num
     
     def addToArrayForm2(self, num: List[int], k: int) -> List[int]:
         if len(str(k)) > len(num):
