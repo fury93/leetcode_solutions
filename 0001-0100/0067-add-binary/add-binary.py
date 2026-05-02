@@ -1,9 +1,15 @@
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
         a, b = int(a, 2), int(b, 2)
+        while b:
+            a, b = a ^ b, (a & b) << 1
+        return f"{a:b}"
+    
+    def addBinary2(self, a: str, b: str) -> str:
+        a, b = int(a, 2), int(b, 2)
         return bin(a + b)[2:]
 
-    def addBinary2(self, a: str, b: str) -> str:
+    def addBinary3(self, a: str, b: str) -> str:
         res, carry = [], 0
         
         for i in range(max(len(a), len(b))):
