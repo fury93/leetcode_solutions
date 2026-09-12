@@ -1,6 +1,30 @@
 class Solution:
     def maximumWeight(self, intervals: List[List[int]]) -> List[int]:
         n = len(intervals)
+        arr = sorted(range(n), key=lambda i: intervals[i][0])
+        starts = [intervals[i][0] for i in arr]
+        empty = (0, [])
+        dp = [[empty]*5 for _ in range(n+1)]
+        for i in range(n-1, -1, -1):
+            row = dp[i]
+            idx = arr[i]
+            l, r, w = intervals[idx]
+            nxt = bisect.bisect_right(starts, r)
+            for j in range(1, 5):
+                best = dp[i+1][j]
+                sub = dp[nxt][j-1]
+                sc = sub[0] + w
+                if sc > best[0]:
+                    best = (sc, sorted(sub[1] + [idx]))
+                elif sc == best[0]:
+                    cl = sorted(sub[1] + [idx])
+                    if cl < best[1]:
+                        best = (sc, cl)
+                row[j] = best
+        return dp[0][4][1]
+
+    def maximumWeight2(self, intervals: List[List[int]]) -> List[int]:
+        n = len(intervals)
         arr = [
             (intervals[i][1], intervals[i][0], intervals[i][2], i)
             for i in range(n)
