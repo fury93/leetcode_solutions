@@ -1,7 +1,6 @@
 class Solution:
     def evaluate(self, s: str, knowledge: List[List[str]]) -> str:
-        res = []
-        d = {k: v for k, v in knowledge}
+        res, d = [], dict(knowledge)
 
         isParseKey, key = False, []
         for ch in s:
