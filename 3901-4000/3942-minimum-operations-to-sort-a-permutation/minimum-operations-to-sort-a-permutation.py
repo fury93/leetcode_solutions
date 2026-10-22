@@ -1,5 +1,17 @@
 class Solution:
-    def minOperations(self, nums: list[int]) -> int:
+    def minOperations(self, nums: List[int]) -> int:
+        n = len(nums)
+        best = -1
+        s = nums[0]
+        if all(nums[i] == (i + s) % n for i in range(n)):
+            best = min((n - s) % n, s + 2)
+        if all(nums[i] == (s - i) % n for i in range(n)):
+            v = 1 + min((s + 1) % n, (n - s - 1) % n)
+            if best < 0 or v < best:
+                best = v
+        return best
+        
+    def minOperations2(self, nums: list[int]) -> int:
         n = len(nums)
         if n == 1:
             return 0
