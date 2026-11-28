@@ -1,5 +1,38 @@
 class Solution:
     def maximumSaleItems(self, items: List[List[int]], budget: int) -> int:
+        min_price = min(price for _, price in items)
+        max_factor = max(factor for factor, _ in items)
+
+        frequency = [0] * (max_factor + 1)
+        for factor, _ in items:
+            frequency[factor] += 1
+
+        eligible = [0] * (max_factor + 1)
+        for factor in range(1, max_factor + 1):
+            if frequency[factor]:
+                eligible[factor] = sum(
+                    frequency[multiple]
+                    for multiple in range(factor, max_factor + 1, factor)
+                ) - 1
+
+        deals = []
+        for factor, price in items:
+            if eligible[factor] > 0 and price < 2 * min_price:
+                deals.append((price, eligible[factor]))
+        deals.sort()
+
+        answer = 0
+        remaining = budget
+        for price, capacity in deals:
+            purchased = min(capacity, remaining // price)
+            answer += 2 * purchased
+            remaining -= price * purchased
+            if purchased < capacity:
+                break
+
+        return answer + remaining // min_price
+        
+    def maximumSaleItems2(self, items: List[List[int]], budget: int) -> int:
         items.sort(key=lambda x: x[1])
         mx = max(factor for factor, _ in items)
         freq = [0] * (mx + 1)
